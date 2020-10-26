@@ -40,8 +40,8 @@
 			<div id="login-tab-content">
 				<form class="login-form" action="" method="post">
                 <?php include('errors.php'); ?>
-					<input type="text" class="input" id="user_login" name="username"autocomplete="off" placeholder="Username">
-					<input type="password" class="input" id="user_pass" name="password "autocomplete="off" placeholder="Password">
+					<input type="text" class="input" id="user_login" name="username" autocomplete="off" placeholder="Username">
+					<input type="password" class="input" id="user_pass" name="password" autocomplete="off" placeholder="Password">
 					<input type="checkbox" class="checkbox" id="remember_me">
 					<input type="submit" name="login" class="button" value="Login">
 				</form>
