@@ -77,7 +77,7 @@ if(isset($_POST['login']))
   //mysql_select_db($dbDatabase, $db)or die("Couldn't select the database."); 
   
     $username = mysqli_real_escape_string($con, $_POST['username']);
-    $password = mysqli_real_escape_string($con, $_POST['password']);
+    $password = mysqli_real_escape_string($con, $_POST['pass1']);
   
     if (empty($username)) {
       array_push($errors, "Username is required");
