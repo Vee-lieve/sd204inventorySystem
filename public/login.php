@@ -31,8 +31,8 @@
 					<input type="text" class="input" id="lname" name="last_name" autocomplete="off" placeholder="Last name">
 					<input type="email" class="input" id="user_email" name="email" autocomplete="off" placeholder="Email">
 					<input type="text" class="input" id="user_name" name="username" autocomplete="off" placeholder="Username">
-					<input type="password" class="input" id="user_pass" name="pass1" autocomplete="off" placeholder="Password">
-					<input type="password" class="input" id="user_pass" name="pass2" autocomplete="off" placeholder="Confirm password">
+					<input type="password" class="input" id="user_pass" name="password_1" autocomplete="off" placeholder="Password">
+					<input type="password" class="input" id="user_pass" name="password_2" autocomplete="off" placeholder="Confirm password">
 					<input type="submit" class="button" name="register" value="Sign Up">
 				</form>
 			</div>
