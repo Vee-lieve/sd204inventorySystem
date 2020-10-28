@@ -103,7 +103,7 @@
                 </div>
             </a>
 
-            <a href="../public/index.php" class="bg-dark list-group-item list-group-item-action">
+            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-tasks fa-fw mr-3"></span>
                     <span class="menu-collapsed">Suppliers</span>
