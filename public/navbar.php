@@ -47,14 +47,22 @@
                 </div>
             </a>
 
+<<<<<<< HEAD
             <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+=======
+            <a href="../public/stock.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+>>>>>>> d4e642b864e0612e8963910660f77510e3087d86
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Stocks</span>
                 </div>
             </a>
 
+<<<<<<< HEAD
             <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+=======
+            <a href="../public/cashflow.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+>>>>>>> d4e642b864e0612e8963910660f77510e3087d86
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Cash Flow</span>
@@ -70,10 +78,10 @@
             </a>
             <!-- Submenu content -->
             <div id='submenu5' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="sales-rep.php" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Sales</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="stock-rep.php" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Stocks</span>
                 </a>
             </div>
@@ -83,14 +91,18 @@
                 <small>OPTIONS</small>
             </li>
             <!-- /END Separator -->
+<<<<<<< HEAD
             <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action">
+=======
+            <a href="../public/customers.php" class="bg-dark list-group-item list-group-item-action">
+>>>>>>> d4e642b864e0612e8963910660f77510e3087d86
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-calendar fa-fw mr-3"></span>
                     <span class="menu-collapsed">Customers</span>
                 </div>
             </a>
 
-            <a href="../public/index.php" class="bg-dark list-group-item list-group-item-action">
+            <a href="../public/supplier.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-tasks fa-fw mr-3"></span>
                     <span class="menu-collapsed">Suppliers</span>
