@@ -77,7 +77,7 @@
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-clipboard-list fa-fw mr-3"></span>
                     <span class="menu-collapsed">Reports</span>
-                    <span class="fas fa-caret-down fa-fw ml-auto"></span>
+                    <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
             <!-- Submenu content -->
@@ -113,7 +113,7 @@
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-clipboard-list fa-fw mr-3"></span>
                     <span class="menu-collapsed">Products</span>
-                    <span class="fas fa-caret-down fa-fw ml-auto"></span>
+                    <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
             <!-- Submenu content -->
@@ -158,7 +158,11 @@
         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Primary Card</div>
+                                    <!-- <img class="card-img-top" src="../src/images/register-bg.png" alt="Card image cap">    -->
+                                    <div class="card-body">
+                                        <h3>66</h3>
+                                        <h4 class="card-text">Total Products</h4>
+                                    </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -167,7 +171,10 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Warning Card</div>
+                                    <div class="card-body">
+                                        <h3>50</h3>
+                                        <h4 class="card-text">Total Categories</h4>
+                                    </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -176,7 +183,10 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Success Card</div>
+                                    <div class="card-body">
+                                        <h3>232</h3>
+                                        <h4 class="card-text">Total Sales</h4>
+                                    </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -185,7 +195,10 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Danger Card</div>
+                                    <div class="card-body">
+                                        <h3>120</h3>
+                                        <h4 class="card-text">Total Stocks</h4>
+                                    </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
