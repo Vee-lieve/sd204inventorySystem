@@ -1,9 +1,9 @@
- <!-- Bootstrap NavBar -->
- <nav class="navbar navbar-expand-md navbar-light light-blue lighten-2">
+   <!-- Bootstrap NavBar -->
+   <nav class="navbar navbar-expand-md navbar-light light-blue lighten-2">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">IMS</a> 
+    <a class="navbar-brand" id="brand" href="../public/test.php">Shop Inventory System</a> 
     <div class="collapse navbar-collapse" id="navbar-list-4">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
@@ -39,6 +39,7 @@
                 </div>
             </a>
     
+            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
             <a href="../public/inventory.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
@@ -46,14 +47,22 @@
                 </div>
             </a>
 
+<<<<<<< HEAD
+            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+=======
             <a href="../public/stock.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+>>>>>>> d4e642b864e0612e8963910660f77510e3087d86
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Stocks</span>
                 </div>
             </a>
 
+<<<<<<< HEAD
+            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+=======
             <a href="../public/cashflow.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+>>>>>>> d4e642b864e0612e8963910660f77510e3087d86
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Cash Flow</span>
@@ -82,7 +91,11 @@
                 <small>OPTIONS</small>
             </li>
             <!-- /END Separator -->
+<<<<<<< HEAD
+            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action">
+=======
             <a href="../public/customers.php" class="bg-dark list-group-item list-group-item-action">
+>>>>>>> d4e642b864e0612e8963910660f77510e3087d86
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-calendar fa-fw mr-3"></span>
                     <span class="menu-collapsed">Customers</span>
