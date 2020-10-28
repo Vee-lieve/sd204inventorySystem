@@ -7,7 +7,12 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="../src/css/index.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<<<<<<< HEAD
  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+=======
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="../src/css/index.css">
+>>>>>>> aa508bcaf9363a27398146301c925f1945c1827c
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -32,7 +37,6 @@
     <div class="nav-wrapper cyan">
       <a href="#" class="brand-logo" id="logo">IMS</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <!-- <li><a href="#"><i class="material-icons dropdown-button" data-activates="dropdown2">notifications</i></a></li> -->
         <li><a href="#"><i class="material-icons dropdown-button" data-activates="dropdown1">account_circle</i></a></li>
       </ul>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -46,11 +50,11 @@
       <p class="no-margin"><span class="white-text email">Admin</span></p>
     </div></li>
     <li class="lone">
-      <a href="#"><i class="fas fa-home my-icon"></i>Dashboards</a></li>
+      <a href="index.php"><i class="fas fa-home my-icon"></i>Dashboard</a></li>
       <div class="divider"></div>
     </li>
 
-    <li class="lone"><a class="waves-effect" href="#"><i class="fas fa-calculator my-icon"></i>Inventory</a></li>
+    <li class="lone"><a class="waves-effect" href="#inv"><i class="fas fa-calculator my-icon"></i>Inventory</a></li>
     <li class="lone"><a class="waves-effect" href="#"><i class="fas fa-clipboard my-icon"></i>Stock</a></li>
     <li class="lone"><a class="waves-effect" href="#"><i class="fas fa-dollar-sign my-icon"></i>Cash Flow</a></li>
     <li class="lone"><a class="waves-effect" href="#"><i class="fas fa-users my-icon"></i>Suppliers</a></li>
@@ -102,6 +106,14 @@
     </li>
     <!-- <li class="lone"><a class="waves-effect" href="#"><i class="fas fa-clipboard-list my-icon"></i>Reports</a></li> -->
   </ul>
+
+
+  <div id="inv"><h1>inventory</h1></div>
+
+
+
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../src/js/index.js"></script>
