@@ -1,6 +1,3 @@
-<?php
-    include 'navbar.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +13,7 @@
 
 </head>
 <body>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
     <!-- Bootstrap NavBar -->
 <nav class="navbar navbar-expand-md navbar-light light-blue lighten-2">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -161,9 +153,7 @@
             </a>
         </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
->>>>>>> 4a7cfa9d9bd396dc2b4cbf1caa17fbf2900bb9aa
->>>>>>> e3796fac4298c1d3924b7ba67e2c282ffd6ea09b
->>>>>>> 7f69cadf8ad7756d312b276dc37dfe3470fc5bcf
+
     <!-- MAIN -->
     <div class="col p-4">
         <h1 class="display-4">Dashboard</h1>
