@@ -17,7 +17,7 @@
 </head>
 <body>
     
-<div class="container-lg">
+<div class="container-lg ml-5 mt-4">
     <div class="table-responsive">
         <div class="table-wrapper">
             <div class="table-title">
