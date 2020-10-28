@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
 </head>
 <body>
-<div class="container-lg">
+<div class="container-lg mx-auto d-block mt-4">
     <div class="table-responsive">
         <div class="table-wrapper">
             <div class="table-title">
@@ -24,7 +24,7 @@
                     <div class="col-sm-8"><h2><b>Stock Management</b></h2></div>
                 </div>
             </div>
-            <table class="table table-bordered">
+            <table class="table table-bordered text-center">
                 <thead>
                     <tr>
                         <th>Stock ID</th>
@@ -63,9 +63,9 @@
                     </tr>      
                 </tbody>
             </table>
-           <center> <div class="col-sm-4" id="add">
-                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
-                    </div></center>
+            <div class="col-sm-2 mx-auto d-block mt-4" id="add">
+                <button type="button" class="btn btn-info add-new"><i class="fa fa-plus" style="font-size: 14px;s"></i> Add New</button>
+            </div>
         </div>
     </div>
 </div> 

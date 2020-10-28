@@ -64,10 +64,10 @@ table.table td i {
     font-size: 19px;
 }
 table.table td a.add i {
-    font-size: 24px;
+    font-size: 12px;
     margin-right: -1px;
     position: relative;
-    top: 3px;
+    top:32px;
 }    
 table.table .form-control {
     height: 32px;
@@ -81,7 +81,6 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
-
 
 th{
     font-size: 13px;
