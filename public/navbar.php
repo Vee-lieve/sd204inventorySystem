@@ -126,12 +126,6 @@
                 </a>
             </div>
             
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fas fa-bell fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary text-white ml-2">5</span></span>
-                </div>
-            </a>
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed" style="background-color: #333333;"></li>
             <!-- /END Separator -->
@@ -141,7 +135,7 @@
                     <span class="menu-collapsed">Help</span>
                 </div>
             </a>
-            <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Collapse</span>
