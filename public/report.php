@@ -18,7 +18,12 @@
         console.log(values);
         var chart = BuildChart(labels, values, "Items Sold Over Montlhy (Year 2020)");
     </script>
-    <h1 class="align text-center"> Report Generation Module </h1>
+    <h2 class="align text-center"> Report Generation Module </h2>
+    <br><br>
+    <div class="chart">
+            <canvas id="myChart"></canvas>
+    </div>
+    <br><br>
     <div class="table-responsive ">
         <table class="table table-bordered table-hover  " id="dataTable">
             <thead class="blue">
@@ -102,9 +107,6 @@
                 </tr>
             </tbody>
         </table>
-        <div class="chart">
-            <canvas id="myChart"></canvas>
-        </div>
     </div>
 </body>
 
