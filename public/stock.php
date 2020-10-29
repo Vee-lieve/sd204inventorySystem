@@ -32,7 +32,7 @@
                         <th>Product ID</th>
                         <th>Supplier ID</th>
                         <th>Stock Date</th>
-                        <th>Description</th>
+                        <th>Descr.</th>
                         <th>Quantity</th>
                         <th>Total Price</th>
                         <th>Date Created</th>

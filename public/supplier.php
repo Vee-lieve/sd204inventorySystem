@@ -55,7 +55,7 @@
                 </tbody>
             </table>
            <center> <div class="col-sm-4" id="add">
-                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+           <button type="button" class="btn btn-info add-new"><i class="fas fa-plus" style="font-size: 14px;"></i> Add New</button>
                     </div></center>
         </div>
     </div>

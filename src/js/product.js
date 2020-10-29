@@ -8,7 +8,7 @@ $(document).ready(function(){
         var row = '<tr>' +
             '<td><input type="text" class="form-control" name="productId" id="productId"></td>' +
             '<td><input type="text" class="form-control" name="category" id="category"></td>' +
-            '<td><input type="text" class="form-control" name="brand" id="brand"></td>' +
+            '<td><input type="text" class="form-control" name="productBrand" id="productBrand"></td>' +
             '<td><input type="text" class="form-control" name="quantity" id="quantity"></td>' +
             '<td><input type="text" class="form-control" name="price" id="price"></td>' +
             '<td><input type="text" class="form-control" name="status" id="status"></td>' +
