@@ -10,6 +10,7 @@
 <title>Inventory</title>
 <link rel="stylesheet" href="../src/css/supplier.css">
 <link rel="stylesheet" href="../src/css/navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -46,9 +47,9 @@
                     
 
                         <td>
-                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>      
                 </tbody>
