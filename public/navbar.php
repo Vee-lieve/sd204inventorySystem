@@ -48,14 +48,14 @@
 
             <a href="../public/stock.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                    <span class="far fa-calendar-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Stocks</span>
                 </div>
             </a>
 
-            <a href="../public/cashflow.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                    <span class="fas fa-dollar-sign fa-fw mr-3"></span>
                     <span class="menu-collapsed">Cash Flow</span>
                 </div>
             </a>
@@ -78,16 +78,25 @@
             </div>
            
             <!-- Separator with title -->
-            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed" style="background-color: #333333;">
+            <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed" style="background-color: #333333;">
                 <small>OPTIONS</small>
-            </li>
+            </li> -->
             <!-- /END Separator -->
-            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action">
+            <a href="../public/customers.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-calendar fa-fw mr-3"></span>
+                    <span class="fas fa-users fa-fw mr-3"></span>
                     <span class="menu-collapsed">Customers</span>
                 </div>
             </a>
+
+
+            <a href="../public/order.php" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-clipboard-check fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Orders</span>
+                </div>
+            </a>
+
 
             <a href="../public/supplier.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
@@ -95,6 +104,8 @@
                     <span class="menu-collapsed">Suppliers</span>
                 </div>
             </a>
+
+
 
             <a href="#submenu8" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
@@ -105,34 +116,26 @@
             </a>
             <!-- Submenu content -->
             <div id='submenu8' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="../public/product.php" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Add Product</span>
                 </a>
-                <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Categories</span>
-                </a> -->
             </div>
             
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed" style="background-color: #333333;"></li>
             <!-- /END Separator -->
-            <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-question fa-fw mr-3"></span>
                     <span class="menu-collapsed">Help</span>
                 </div>
             </a>
-<<<<<<< HEAD
-             -->
-            <!-- <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
-=======
             
-            <a href="#"   class="sidebar-colapse bg-dark list-group-item list-group-item-action d-flex align-items-center">
->>>>>>> a90b3e6f71a57d04132d7bdd885ca3311f855d87
+            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span id="collapse-icon" class="fa fa-2x fa-angle-double-right mr-3"></span>
+                    <span id="collapse-icon" class="fa fa-2x fas fa-angle-double-right mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Collapse</span>
                 </div>
-            </a> -->
+            </a>
         </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->

@@ -67,7 +67,6 @@
 <script src="../src/js/supplier.js"></script>
 <script src="../src/js/navbar.js"></script>
 
-<?php include('../src/js/navbar.js'); ?>
 
 </body>
 </html>

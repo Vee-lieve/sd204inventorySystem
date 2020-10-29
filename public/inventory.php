@@ -54,7 +54,7 @@
                         <td>10-27-20</td>
 
                         <td>
-                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
+                            <a class="add" title="Add" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
                             <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a>
                         </td>
@@ -74,6 +74,6 @@
 <script src="../src/js/inventory.js"></script>
 <script src="../src/js/navbar.js"></script>
 
-<?php include('../src/js/navbar.js'); ?>
+
 </body>
 </html>
