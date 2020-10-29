@@ -95,17 +95,6 @@
                 <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
             </div>
         </div>
-
-        <div class="card">
-            <h5 class="card-header font-weight-light">Requirements</h5>
-            <div class="card-body">
-                <ul>
-                    <li>JQuery</li>
-                    <li>Bootstrap 4.3</li>
-                    <li>FontAwesome</li>
-                </ul>
-            </div>
-        </div>
     </div><!-- Main Col END -->
 </div><!-- body-row END -->
 
