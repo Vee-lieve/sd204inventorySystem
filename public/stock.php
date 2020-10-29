@@ -78,6 +78,5 @@
 <script src="../src/js/stock.js"></script>
 <script src="../src/js/navbar.js"></script>
 
-<?php include('../src/js/navbar.js'); ?>
 </body>
 </html>
