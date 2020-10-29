@@ -3,7 +3,7 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand lead isplay-4" id="brand" href="../public/test.php">Shop Inventory System</a> 
+    <a class="navbar-brand lead" id="brand" href="../public/test.php" style="font-size: 30px;">Shop Inventory System</a> 
     <div class="collapse navbar-collapse" id="navbar-list-4">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
@@ -122,6 +122,7 @@
                     <span class="menu-collapsed">Help</span>
                 </div>
             </a>
+            
             <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x mr-3"></span>
