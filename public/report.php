@@ -25,7 +25,7 @@
     </div>
     <br><br>
     <div class="table-responsive ">
-        <table class="table table-bordered table-hover  " id="dataTable">
+        <table class="table table-bordered table-hover" id="dataTable">
             <thead class="blue">
                 <th>Month Of </th>
                 <th>Items Sold</th>
