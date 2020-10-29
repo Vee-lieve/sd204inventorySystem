@@ -11,9 +11,8 @@
                     <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Profile</a>
-                <!-- <a class="dropdown-item" href="#">Edit Profile</a> -->
-                <a class="dropdown-item" href="register.php">Log Out</a>
+                    <a class="dropdown-item" href="profile.php">Profile</a>
+                    <a class="dropdown-item" href="register.php">Log Out</a>
                 </div>
          </ul>
     </div>
@@ -32,7 +31,7 @@
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-            <a href="../public/test.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="../public/index.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Dashboard</span>
@@ -41,7 +40,7 @@
     
             <a href="../public/inventory.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                    <span class="fas fa-warehouse fa-fw mr-3"></span>
                     <span class="menu-collapsed">Inventory</span>
                 </div>
             </a>
@@ -127,7 +126,7 @@
         
              <a href="#" class="sidebar-colapse bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span id="collapse-icon" class="fa fa-2x fas fa-angle-double-right mr-3"></span>
+                    <span id="collapse-icon" class="fa fa-2x fas fa-angle-double-left mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Collapse</span>
                 </div>
             </a>

@@ -148,7 +148,6 @@
         return myChart;
     }
     // HTML To JSON Script 
-    // *Forked* from https://johndyer.name/html-table-to-json/
     var table = document.getElementById('dataTable');
     var json = []; // first row needs to be headers 
     var headers = [];

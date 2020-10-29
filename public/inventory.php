@@ -56,7 +56,7 @@
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>      
                 </tbody>
