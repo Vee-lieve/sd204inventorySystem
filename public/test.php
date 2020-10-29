@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 <?php include('navbar.php');?>
 
-=======
-<?php
-    include 'navbar.php';
-?>
->>>>>>> d6a4493fd5f35ea4557b3efadbd25aab1868e424
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,11 +23,12 @@
         </ol>
         <div class="row">
             <div class="col-xl-3 col-md-6">
-                <div class="card bg-c-blue order-card mb-4">
+                <div class="card bg-c-blue mb-4">
                     <!-- <img class="card-img-top" src="../src/images/register-bg.png" alt="Card image cap">    -->
-                    <div class="card-body">
+                    <div class="card-body order-card">
                         <h3>66</h3>
-                        <h4 class="card-text">Total Products</h4>
+                        <h2 class="text-right"><i class="fas fa-sitemap f-right"></i></h2>
+                        <h4 class="card-text mb-2">Total Products</h4>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -42,10 +37,11 @@
                 </div>
             </div>
             <div class="col-xl-3 col-md-6">
-                <div class="card bg-warning text-white mb-4">
-                    <div class="card-body">
+                <div class="card bg-c-yellow mb-4">
+                    <div class="card-body order-card">
                         <h3>50</h3>
-                        <h4 class="card-text">Total Categories</h4>
+                        <h2 class="text-right"><i class="fas fa-th-list f-right"></i></h2>
+                        <h4 class="card-text mb-2">Total Categories</h4>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -54,10 +50,11 @@
                 </div>
             </div>
             <div class="col-xl-3 col-md-6">
-                <div class="card bg-success text-white mb-4">
-                    <div class="card-body">
+                <div class="card bg-c-green mb-4">
+                    <div class="card-body order-card">
                         <h3>232</h3>
-                        <h4 class="card-text">Total Sales</h4>
+                        <h2 class="text-right"><i class="fas fa-coins f-right"></i></h2>
+                        <h4 class="card-text mb-2">Total Sales</h4>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -66,9 +63,10 @@
                 </div>
             </div>
             <div class="col-xl-3 col-md-6">
-                <div class="card bg-danger text-white mb-4">
-                    <div class="card-body">
+                <div class="card bg-c-pink mb-4">
+                    <div class="card-body order-card">
                         <h3>120</h3>
+                        <h2 class="text-right"><i class="fas fa-boxes f-right"></i></h2>
                         <h4 class="card-text">Total Stocks</h4>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -119,42 +117,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-<<<<<<< HEAD
 <script src="../src/js/navbar.js"></script>
-=======
-<!-- <script src="../src/js/navbar.js"></script> -->
-
-<script>
-    
-// Hide submenus
-$('#body-row .collapse').collapse('hide'); 
-
-// Collapse/Expand icon
-$('#collapse-icon').addClass('+-fa-angle-double-left'); 
-
-// Collapse click
-$('.sidebar-colapse').click(function() {
-    SidebarCollapse();
-});
-
-function SidebarCollapse () {
-    $('.menu-collapsed').toggleClass('d-none');
-    $('.sidebar-submenu').toggleClass('d-none');
-    $('.submenu-icon').toggleClass('d-none');
-    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
-    
-    // Treating d-flex/d-none on separators with title
-    var SeparatorTitle = $('.sidebar-separator-title');
-    if ( SeparatorTitle.hasClass('d-flex') ) {
-        SeparatorTitle.removeClass('d-flex');
-    } else {
-        SeparatorTitle.addClass('d-flex');
-    }
-    
-    // Collapse/Expand icon
-    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
-}
-</script>
->>>>>>> d6a4493fd5f35ea4557b3efadbd25aab1868e424
 </body>
 </html>

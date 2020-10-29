@@ -124,19 +124,8 @@
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed" style="background-color: #333333;"></li>
             <!-- /END Separator -->
-<<<<<<< HEAD
         
              <a href="#" class="sidebar-colapse bg-dark list-group-item list-group-item-action d-flex align-items-center">
-=======
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-question fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Help</span>
-                </div>
-            </a>
-            
-            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
->>>>>>> d6a4493fd5f35ea4557b3efadbd25aab1868e424
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x fas fa-angle-double-right mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Collapse</span>
