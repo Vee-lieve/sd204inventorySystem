@@ -122,10 +122,15 @@
                     <span class="menu-collapsed">Help</span>
                 </div>
             </a>
+<<<<<<< HEAD
              -->
             <!-- <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+=======
+            
+            <a href="#"   class="sidebar-colapse bg-dark list-group-item list-group-item-action d-flex align-items-center">
+>>>>>>> a90b3e6f71a57d04132d7bdd885ca3311f855d87
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-icon" class="fa fa-2x fa-angle-double-right mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Collapse</span>
                 </div>
             </a> -->
