@@ -56,7 +56,7 @@
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>      
                 </tbody>
@@ -73,7 +73,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="../src/js/inventory.js"></script>
 <script src="../src/js/navbar.js"></script>
-
-
 </body>
 </html>

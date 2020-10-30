@@ -1,42 +1,30 @@
-#slide-out{
-    margin-top:64px;
-  }
-  
-  #dropdown1, #dropdown2{
-    margin-top:64px;
-  }
-  
-  .dropdown-content li > a{
-    color:#00bcd4 !important;
-  }
-  
-  .side-nav li.active{
-    background-color:#00bcd4 !important;
-  }
-  
-  .side-nav li.user-li.active{
-    background-color:#ac3973 !important;
-  }
-  
-   .side-nav li.active.lone a,.side-nav li.active ul li:first-child, .side-nav li.active.lone a svg, .side-nav li.active ul li div.collapsible-header p svg{
-    color:#FFFFFF !important;
-  }
-  
-  .my-icon{
-    font-size:1.5em;
-    margin-right:14px;
-    color:#666666;
-  }
-  
-  .changed{
-    margin-left:5px;
-    color:#666666;
-  }
-  
-  .no-margin{
-    margin:0px;
-  }
-  
-  .user-li{
-    background-color:#c6538c !important;
-  }
+.order-card {
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(120deg,#4099ff,#73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(120deg,#2ed8b6,#59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(120deg,#FFB64D,#ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(120deg,#FF5370,#ff869a);
+}
+
+.order-card i {
+    font-size: 57px;
+    margin-right: 4px;
+    color: gray;
+    opacity: 0.4;
+}
+
+.f-right {
+    float: right;
+}
