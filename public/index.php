@@ -105,17 +105,10 @@
     <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
-<<<<<<< HEAD:public/test.php
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../src/js/navbar.js"></script>
 
 
 
-=======
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-<script src="../src/js/navbar.js"></script>
-<script src="../src/js/sales-rep.js"></script>
-<script src="../src/js/stock-rep.js"></script>
->>>>>>> 9d82e5c02db42d06b2bd292a01602d2ab4bb059c:public/index.php
 </body>
 </html>

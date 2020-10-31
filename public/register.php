@@ -1,3 +1,6 @@
+<?php include('server.php');?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +42,7 @@
                 </div>
 
                 <button class="btn btn-lg btn-primary btn-block btn-register text-uppercase font-weight-bold mb-2" type="submit">Register</button>
-                <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+                <a class="d-block text-center mt-2 small" href="login.php">Sign In</a>
               </form>
             </div>
           </div>
