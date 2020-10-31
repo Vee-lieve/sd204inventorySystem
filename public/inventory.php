@@ -30,7 +30,7 @@
                         <th>Product ID</th>
                         <th>Stock ID</th>
                         <th>Product Name</th>
-                        <th>Description</th>
+                        <th>Descr.</th>
                         <th>Price</th>
                         <th>Status</th>
                         <th>Date Created</th>
@@ -54,7 +54,7 @@
                         <td>10-27-20</td>
 
                         <td>
-                            <a class="add" title="Add" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
+                            <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
                             <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
                         </td>

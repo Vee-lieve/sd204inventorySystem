@@ -82,7 +82,6 @@ table.table td .add {
     display: none;
 }
 
-
 th{
-    font-size: 13px;
+    background-color: lightblue;
 }

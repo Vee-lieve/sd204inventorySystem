@@ -4,7 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 .table-wrapper {
-    width: 1000px;
+    width: 1025px;
     margin: 30px auto;
     background: #fff;
     padding: 20px;	
@@ -83,5 +83,5 @@ table.table td .add {
 }
 
 th{
-    font-size: 13px;
+    background-color: lightblue;
 }
