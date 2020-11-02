@@ -23,11 +23,11 @@
                   <div class="login-form">
                     <div class="sign-in-htm">
                       <div class="group">
-                        <input type="text" id="user" class="input" placeholder="Username" required autofocus>
+                        <input type="text" name="user" id="user" class="input" placeholder="Username" required autofocus>
                        
                       </div>
                       <div class="group">
-                        <input type="password" id="pass" class="input" data-type="password" placeholder="Password" required>
+                        <input type="password" name="pass" id="pass" class="input" data-type="password" placeholder="Password" required>
                         
                       </div>
                       <div class="group">
@@ -44,16 +44,16 @@
                     </div>
                     <div class="sign-up-htm">
                       <div class="group">
-                        <input type="text" id="user" class="input" placeholder="Username" required autofocus>
+                        <input type="text" name="user" id="user" class="input" placeholder="Username" required autofocus>
                       </div>
                       <div class="group">
-                        <input  type="password"  id="pass" class="input" data-type="password" placeholder="Password" required>
+                        <input  type="password" name="pass" id="pass" class="input" data-type="password" placeholder="Password" required>
                       </div>
                       <div class="group">
-                        <input type="password" id="pass" class="input" data-type="password" placeholder="Confirm Password" required>
+                        <input type="password" name="pass" id="pass" class="input" data-type="password" placeholder="Confirm Password" required>
                       </div>
                       <div class="group">
-                        <input type="email" id="pass" class="input" placeholder="Email address" required>
+                        <input type="email" name="email" id="email" class="input" placeholder="Email address" required>
                       </div>
                       <div class="group">
                         <input type="submit" class="button" value="Sign Up">
@@ -78,3 +78,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
