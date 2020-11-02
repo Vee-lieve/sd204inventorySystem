@@ -64,7 +64,7 @@ if (count($errors) == 0) {
     $_SESSION['username'] = $username;
     $_SESSION['first_name'] =$first_name;
     $_SESSION['last_name'] =$last_name;
-    header('location: index.php');
+    header('location: login.php');
     }
   }
 

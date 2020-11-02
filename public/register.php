@@ -1,3 +1,6 @@
+<?php include('server.php');?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +68,29 @@
                     </div>
                   </div>
                 </div>
+<<<<<<< HEAD
+
+                <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                    <label for="inputEmail">Email address</label>
+                </div>
+
+                <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="form-label-group">
+                    <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                    <label for="inputConfirmPassword">Confirm password</label>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block btn-register text-uppercase font-weight-bold mb-2" type="submit">Register</button>
+                <a class="d-block text-center mt-2 small" href="login.php">Sign In</a>
+              </form>
+=======
               </div>
+>>>>>>> 408b9d08ade3bc301ad5ef71a9dda4c8652c8262
             </div>
           </div>
         </div>
