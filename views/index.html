@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="../src/css/index.css"> -->
-    <!-- <link rel="import" href="navbar.html"> -->
-    <!-- <link rel="stylesheet" href="../src/css/navbar.css"> -->
+    <!-- <link rel="stylesheet" href="{{ asset('css/index.css')}}"> 
+    <link rel="import" href="navbar.html">
+    <link rel="stylesheet" href="../src/css/navbar.css">  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -17,113 +17,113 @@
 <style>
     .order-card {
     color: #fff;
-}
+    }
 
-.bg-c-blue {
-    background: linear-gradient(120deg,#4099ff,#73b4ff);
-}
+    .bg-c-blue {
+        background: linear-gradient(120deg,#4099ff,#73b4ff);
+    }
 
-.bg-c-green {
-    background: linear-gradient(120deg,#2ed8b6,#59e0c5);
-}
+    .bg-c-green {
+        background: linear-gradient(120deg,#2ed8b6,#59e0c5);
+    }
 
-.bg-c-yellow {
-    background: linear-gradient(120deg,#FFB64D,#ffcb80);
-}
+    .bg-c-yellow {
+        background: linear-gradient(120deg,#FFB64D,#ffcb80);
+    }
 
-.bg-c-pink {
-    background: linear-gradient(120deg,#FF5370,#ff869a);
-}
+    .bg-c-pink {
+        background: linear-gradient(120deg,#FF5370,#ff869a);
+    }
 
-.order-card i {
-    font-size: 57px;
-    margin-right: 4px;
-    color: gray;
-    opacity: 0.4;
-}
+    .order-card i {
+        font-size: 57px;
+        margin-right: 4px;
+        color: gray;
+        opacity: 0.4;
+    }
 
-.f-right {
-    float: right;
-}
+    .f-right {
+        float: right;
+    }
 
-#body-row {
-    margin-left:0;
-    margin-right:0;
-}
+    #body-row {
+        margin-left:0;
+        margin-right:0;
+    }
 
-#sidebar-container {
-    min-height: 100vh;   
-    background-color: #333;
-    padding: 0;
-}
+    #sidebar-container {
+        min-height: 100vh;   
+        background-color: #333;
+        padding: 0;
+    }
 
-/* Sidebar sizes when expanded and expanded */
-.sidebar-expanded {
-    width: 230px;
-}
-.sidebar-collapsed {
-    width: 60px;
-}
+    /* Sidebar sizes when expanded and expanded */
+    .sidebar-expanded {
+        width: 230px;
+    }
+    .sidebar-collapsed {
+        width: 60px;
+    }
 
-/* Menu item*/
-#sidebar-container .list-group a {
-    height: 50px;
-    color: white;
-}
+    /* Menu item*/
+    #sidebar-container .list-group a {
+        height: 50px;
+        color: white;
+    }
 
-/* Submenu item*/
-#sidebar-container .list-group .sidebar-submenu a {
-    height: 45px;
-    padding-left: 30px;
-}
-.sidebar-submenu {
-    font-size: 0.9rem;
-}
+    /* Submenu item*/
+    #sidebar-container .list-group .sidebar-submenu a {
+        height: 45px;
+        padding-left: 30px;
+    }
+    .sidebar-submenu {
+        font-size: 0.9rem;
+    }
 
-/* Separators */
-.sidebar-separator-title {
-    height: 35px;
-    font-size: 17px;
-}
-.sidebar-separator {
-    background-color: #333;
-    height: 25px;
-}
-.logo-separator {
-    background-color: #333;    
-    height: 60px;
-}
+    /* Separators */
+    .sidebar-separator-title {
+        height: 35px;
+        font-size: 17px;
+    }
+    .sidebar-separator {
+        background-color: #333;
+        height: 25px;
+    }
+    .logo-separator {
+        background-color: #333;    
+        height: 60px;
+    }
 
-/* Closed submenu icon */
-#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
-  content: " \f0d7";
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900; 
-  display: inline;
-  text-align: right;
-  padding-left: 10px;
-}
-/* Opened submenu icon */
-#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
-  content: " \f0da";
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900; 
-  display: inline;
-  text-align: right;
-  padding-left: 10px;
-}
+    /* Closed submenu icon */
+    #sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+    content: " \f0d7";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; 
+    display: inline;
+    text-align: right;
+    padding-left: 10px;
+    }
+    /* Opened submenu icon */
+    #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+    content: " \f0da";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; 
+    display: inline;
+    text-align: right;
+    padding-left: 10px;
+    }
 
-.bg-custom-1 {
-    background-color: #85144b;
-  }
-  
-.bg-custom-2 {
-    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-}
+    .bg-custom-1 {
+        background-color: #85144b;
+    }
+    
+    .bg-custom-2 {
+        background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    }
 
-#brand{
-    font-size: 35px;
-}
+    #brand{
+        font-size: 35px;
+    }
 </style>
 <body>
        <!-- Bootstrap NavBar -->
@@ -165,47 +165,36 @@
                     <span class="menu-collapsed">Dashboard</span>
                 </div>
             </a>
-    
             <a href="../public/inventory.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-calculator fa-fw mr-3"></span>
                     <span class="menu-collapsed">Inventory</span>
                 </div>
             </a>
-
             <a href="../public/stock.php" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="far fa-calendar-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Stocks</span>
                 </div>
             </a>
-           
-        
             <a href="../public/customers.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-users fa-fw mr-3"></span>
                     <span class="menu-collapsed">Customers</span>
                 </div>
             </a>
-
-
             <a href="../public/order.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-clipboard-check fa-fw mr-3"></span>
                     <span class="menu-collapsed">Orders</span>
                 </div>
             </a>
-
-
             <a href="../public/supplier.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-tasks fa-fw mr-3"></span>
                     <span class="menu-collapsed">Suppliers</span>
                 </div>
             </a>
-
-
-
             <a href="#submenu8" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-clipboard-list fa-fw mr-3"></span>
@@ -219,8 +208,6 @@
                     <span class="menu-collapsed">Add Product</span>
                 </a>
             </div>
-
-
             <a href="#submenu5" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-clipboard-list fa-fw mr-3"></span>
@@ -239,9 +226,7 @@
                 <a href="..public/cashflow.php" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Cash Flow</span>
                 </a>
-            </div>
-
-            
+            </div>           
             <a href="#" class="sidebar-colapse bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x fas fa-angle-double-left mr-3"></span>
@@ -332,49 +317,45 @@
         </div>
     </div><!-- Main Col END -->
 </div><!-- body-row END -->
-
- <!-- jQuery CDN - Slim version (=without AJAX) -->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-<!-- <script src="../src/js/navbar.js"></script> -->
 <script>
     
-// Hide submenus
-$('#body-row .collapse').collapse('hide'); 
+    // Hide submenus
+    $('#body-row .collapse').collapse('hide'); 
 
-// Collapse/Expand icon
-$('#collapse-icon').addClass('+-fa-angle-double-right'); 
-
-// Collapse click
-$('.sidebar-colapse').click(function() {
-    SidebarCollapse();
-});
-
-function SidebarCollapse () {
-    $('.menu-collapsed').toggleClass('d-none');
-    $('.sidebar-submenu').toggleClass('d-none');
-    $('.submenu-icon').toggleClass('d-none');
-    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
-    
-    // Treating d-flex/d-none on separators with title
-    var SeparatorTitle = $('.sidebar-separator-title');
-    if ( SeparatorTitle.hasClass('d-flex') ) {
-        SeparatorTitle.removeClass('d-flex');
-    } else {
-        SeparatorTitle.addClass('d-flex');
-    }
-    
     // Collapse/Expand icon
-    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
-}
+    $('#collapse-icon').addClass('+-fa-angle-double-right'); 
+
+    // Collapse click
+    $('.sidebar-colapse').click(function() {
+        SidebarCollapse();
+    });
+
+    function SidebarCollapse () {
+        $('.menu-collapsed').toggleClass('d-none');
+        $('.sidebar-submenu').toggleClass('d-none');
+        $('.submenu-icon').toggleClass('d-none');
+        $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+        
+        // Treating d-flex/d-none on separators with title
+        var SeparatorTitle = $('.sidebar-separator-title');
+        if ( SeparatorTitle.hasClass('d-flex') ) {
+            SeparatorTitle.removeClass('d-flex');
+        } else {
+            SeparatorTitle.addClass('d-flex');
+        }
+        
+        // Collapse/Expand icon
+        $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+    }
 </script>
-
-
-
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- <script src="../src/js/navbar.js"></script> -->
 </body>
 </html>
