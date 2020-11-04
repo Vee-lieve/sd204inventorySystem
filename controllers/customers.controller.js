@@ -1,11 +1,11 @@
-const Products = require("../models/products.model")
+const Customers = require("../models/customers.model")
 const Result = require("../models/result")
 
 module.exports = {
-    GetProduct(req, res) {
+    GetCustomer(req, res) {
         let result = new Result()
-        Products.find({}, { __v: false }).then(response => {
-            result.message = "List of all products."
+        Customers.find({}, { __v: false }).then(response => {
+            result.message = "List of all customers."
             result.body = response
             res.json({result})
         }).catch(err => {
@@ -14,54 +14,54 @@ module.exports = {
             res.json({result})
         })
     },
-    GetProductById(req, res) {
+    GetCustomerById(req, res) {
         let result = new Result()
-        Products.find({_id: req.params.id}, { __v: false }).then(response => {
-            result.message = "Get product by id."
+        Customers.find({_id: req.params.id}, { __v: false }).then(response => {
+            result.message = "Get customer by id."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, product not found."
+            result.message = "Opps!, customer not found."
             result.body = err
             res.json({result})
         })
     },
-    SaveProduct(req, res) {
+    SaveCustomer(req, res) {
         let result = new Result()
         console.log(req.body)
-        let newProduct = new Products(req.body)
-        newProduct.save().then(response => {
-            result.message = "Successfully added new product."
+        let newCustomer = new Customers(req.body)
+        newCustomer.save().then(response => {
+            result.message = "Successfully added new customer."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful adding of product."
+            result.message = "Opps!, Unsuccessful adding of customer."
             result.body = err
             res.json({result})
         })
     },
-    UpdateProduct(req, res) {
+    UpdateCustomer(req, res) {
         let result = new Result()
         let data = req.body
-        Products.findByIdAndUpdate(data.id, data).then(response => {
-            result.message = "Successfully updated product."
+        Customers.findByIdAndUpdate(data.id, data).then(response => {
+            result.message = "Successfully updated customer."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful update of product."
+            result.message = "Opps!, Unsuccessful update of customer."
             result.body = err
             res.json({result})
         })
     },
-    DeleteProduct(req, res) {
+    DeleteCustomer(req, res) {
         let result = new Result()
         let id = req.params.id
-        Products.findByIdAndRemove(id).then(response => {
-            result.message = "Product sucessfully deleted."
+        Customers.findByIdAndRemove(id).then(response => {
+            result.message = "Customer sucessfully deleted."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful deletion of product."
+            result.message = "Opps!, Unsuccessful deletion of customer."
             result.body = err
             res.json({result})
         })

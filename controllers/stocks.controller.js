@@ -1,11 +1,11 @@
-const Products = require("../models/products.model")
+const Stocks = require("../models/stocks.model")
 const Result = require("../models/result")
 
 module.exports = {
-    GetProduct(req, res) {
+    GetStock(req, res) {
         let result = new Result()
-        Products.find({}, { __v: false }).then(response => {
-            result.message = "List of all products."
+        Stocks.find({}, { __v: false }).then(response => {
+            result.message = "List of all stocks."
             result.body = response
             res.json({result})
         }).catch(err => {
@@ -14,54 +14,54 @@ module.exports = {
             res.json({result})
         })
     },
-    GetProductById(req, res) {
+    GetStockById(req, res) {
         let result = new Result()
-        Products.find({_id: req.params.id}, { __v: false }).then(response => {
-            result.message = "Get product by id."
+        Stocks.find({_id: req.params.id}, { __v: false }).then(response => {
+            result.message = "Get stock by id."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, product not found."
+            result.message = "Opps!, stock not found."
             result.body = err
             res.json({result})
         })
     },
-    SaveProduct(req, res) {
+    SaveStock(req, res) {
         let result = new Result()
         console.log(req.body)
-        let newProduct = new Products(req.body)
-        newProduct.save().then(response => {
-            result.message = "Successfully added new product."
+        let newStock = new Stocks(req.body)
+        newStock.save().then(response => {
+            result.message = "Successfully added new stock."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful adding of product."
+            result.message = "Opps!, Unsuccessful adding of stock."
             result.body = err
             res.json({result})
         })
     },
-    UpdateProduct(req, res) {
+    UpdateStock(req, res) {
         let result = new Result()
         let data = req.body
-        Products.findByIdAndUpdate(data.id, data).then(response => {
-            result.message = "Successfully updated product."
+        Stocks.findByIdAndUpdate(data.id, data).then(response => {
+            result.message = "Successfully updated stock."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful update of product."
+            result.message = "Opps!, Unsuccessful update of stock."
             result.body = err
             res.json({result})
         })
     },
-    DeleteProduct(req, res) {
+    DeleteStock(req, res) {
         let result = new Result()
         let id = req.params.id
-        Products.findByIdAndRemove(id).then(response => {
-            result.message = "Product sucessfully deleted."
+        Stocks.findByIdAndRemove(id).then(response => {
+            result.message = "Stock sucessfully deleted."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful deletion of product."
+            result.message = "Opps!, Unsuccessful deletion of stock."
             result.body = err
             res.json({result})
         })

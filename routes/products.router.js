@@ -3,12 +3,12 @@ const router = express.Router();
 
 // const Authorization = require('../middleware/authorization');
 // const auth = new Authorization();
-const USERS = require("../controllers/users.controller")
+const PRODUCTS = require("../controllers/products.controller")
 
-router.get("/users", /*auth.authorized,*/ USERS.GetUser)
-router.get("/users/:id", /* auth.authorized, */ USERS.GetUserById)
-router.post("/users", /* auth.authorized, */ USERS.SaveUser)
-router.put("/users", /* auth.authorized, */ USERS.UpdateUser)
-router.delete("/users/:id", /* auth.authorized, */ USERS.DeleteUser)
+router.get("/products", /*auth.authorized,*/ PRODUCTS.GetProduct)
+router.get("/products/:id", /* auth.authorized, */ PRODUCTS.GetProductById)
+router.post("/products", /* auth.authorized, */ PRODUCTS.SaveProduct)
+router.put("/products", /* auth.authorized, */ PRODUCTS.UpdateProduct)
+router.delete("/products/:id", /* auth.authorized, */ PRODUCTS.DeleteProduct)
 
-module.exports = router;
+module.exports = router;    

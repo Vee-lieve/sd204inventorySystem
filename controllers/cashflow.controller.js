@@ -1,11 +1,11 @@
-const Products = require("../models/products.model")
+const Cashflow = require("../models/cashflow.model")
 const Result = require("../models/result")
 
 module.exports = {
-    GetProduct(req, res) {
+    GetCashflow(req, res) {
         let result = new Result()
-        Products.find({}, { __v: false }).then(response => {
-            result.message = "List of all products."
+        Cashflow.find({}, { __v: false }).then(response => {
+            result.message = "List of all sales."
             result.body = response
             res.json({result})
         }).catch(err => {
@@ -14,54 +14,54 @@ module.exports = {
             res.json({result})
         })
     },
-    GetProductById(req, res) {
+    GetCashflowById(req, res) {
         let result = new Result()
-        Products.find({_id: req.params.id}, { __v: false }).then(response => {
-            result.message = "Get product by id."
+        Cashflow.find({_id: req.params.id}, { __v: false }).then(response => {
+            result.message = "Get cashflow by id."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, product not found."
+            result.message = "Opps!, cashflow not found."
             result.body = err
             res.json({result})
         })
     },
-    SaveProduct(req, res) {
+    SaveCashflow(req, res) {
         let result = new Result()
         console.log(req.body)
-        let newProduct = new Products(req.body)
-        newProduct.save().then(response => {
-            result.message = "Successfully added new product."
+        let newCashflow = new Cashflow(req.body)
+        newCashflow.save().then(response => {
+            result.message = "Successfully added new cashflow."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful adding of product."
+            result.message = "Opps!, Unsuccessful adding of cashflow."
             result.body = err
             res.json({result})
         })
     },
-    UpdateProduct(req, res) {
+    UpdateCashflow(req, res) {
         let result = new Result()
         let data = req.body
-        Products.findByIdAndUpdate(data.id, data).then(response => {
-            result.message = "Successfully updated product."
+        Cashflow.findByIdAndUpdate(data.id, data).then(response => {
+            result.message = "Successfully updated cashflow."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful update of product."
+            result.message = "Opps!, Unsuccessful update of cashflow."
             result.body = err
             res.json({result})
         })
     },
-    DeleteProduct(req, res) {
+    DeleteCashflow(req, res) {
         let result = new Result()
         let id = req.params.id
-        Products.findByIdAndRemove(id).then(response => {
-            result.message = "Product sucessfully deleted."
+        Cashflow.findByIdAndRemove(id).then(response => {
+            result.message = "Cashflow sucessfully deleted."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful deletion of product."
+            result.message = "Opps!, Unsuccessful deletion of cashflow."
             result.body = err
             res.json({result})
         })

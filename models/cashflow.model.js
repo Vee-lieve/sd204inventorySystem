@@ -1,8 +1,8 @@
 const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
-var PRODUCTSSch = new mongoose.Schema({
-    product_id: {
+var CASHFLOWSch = new mongoose.Schema({
+    cashflow_id: {
         type: Int32,
         required: true
     },
@@ -28,6 +28,6 @@ var PRODUCTSSch = new mongoose.Schema({
     }
 });
 
-var Products = mongoose.model('Products', PRODUCTSSch);
+var Cashflow = mongoose.model('Cashflow', CASHFLOWSch);
 
-module.exports = Products;
+module.exports = Cashflow;

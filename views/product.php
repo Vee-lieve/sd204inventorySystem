@@ -27,27 +27,22 @@
             <table class="table table-bordered text-center">
                 <thead>
                     <tr>
-                        <th>Product ID</th>
-                        <th>Category</th>
-                        <th>Brand</th>
-                        <th>Product Name</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
+                        <th id="product_id">Product ID</th>
+                        <th id="category">Category</th>
+                        <th id="brand">Brand</th>
+                        <th id="product_name">Product Name</th>
+                        <th id="quantity">Quantity</th>
+                        <th id="price">Price</th>
                         <th>Actions</th>
-
-                       
-
                     </tr>
                 </thead>
                 <tbody>
-                   
                         <td>1</td>
                         <td>Shoes</td>
                         <td>Nike</td>
                         <td>Nike Rubber Shoes</td>
                         <td>20</td>
                         <td>300</td>
-
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>

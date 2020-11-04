@@ -28,23 +28,20 @@
             <table class="table table-bordered text-center">
                 <thead>
                     <tr>
-                        <th>Stock ID</th>
-                        <th>Product ID</th>
-                        <th>Supplier ID</th>
-                        <th>Stock Date</th>
-                        <th>Descr.</th>
-                        <th>Quantity</th>
-                        <th>Total Price</th>
-                        <th>Date Created</th>
-                        <th>Date Updated</th>
-                        <th>Date Deleted</th>
-                        <th>Actions</th>
-                       
-
+                        <th id="stock_id">Stock ID</th>
+                        <th id="product_id">Product ID</th>
+                        <th id="supplier_id">Supplier ID</th>
+                        <th id="stock_date">Stock Date</th>
+                        <th id="desc">Desc.</th>
+                        <th id="quantity">Quantity</th>
+                        <th id="total">Total Price</th>
+                        <th id="date_created">Date Created</th>
+                        <th id="date_updated">Date Updated</th>
+                        <th id="date_deleted">Date Deleted</th>
+                        <th>Actions</th>               
                     </tr>
                 </thead>
                 <tbody>
-                   
                         <td>1</td>
                         <td>1</td>
                         <td>1</td>
@@ -55,7 +52,6 @@
                         <td>10-27-20</td>
                         <td>10-27-20</td>
                         <td>10-27-20</td>
-
                         <td>
                         <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
@@ -70,13 +66,10 @@
         </div>
     </div>
 </div> 
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="../src/js/stock.js"></script>
 <script src="../src/js/navbar.js"></script>
-
 </body>
 </html>

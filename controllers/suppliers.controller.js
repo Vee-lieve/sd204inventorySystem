@@ -1,11 +1,11 @@
-const Products = require("../models/products.model")
+const Suppliers = require("../models/suppliers.model")
 const Result = require("../models/result")
 
 module.exports = {
-    GetProduct(req, res) {
+    GetSupplier(req, res) {
         let result = new Result()
-        Products.find({}, { __v: false }).then(response => {
-            result.message = "List of all products."
+        Suppliers.find({}, { __v: false }).then(response => {
+            result.message = "List of all suppliers."
             result.body = response
             res.json({result})
         }).catch(err => {
@@ -14,54 +14,54 @@ module.exports = {
             res.json({result})
         })
     },
-    GetProductById(req, res) {
+    GetSupplierById(req, res) {
         let result = new Result()
-        Products.find({_id: req.params.id}, { __v: false }).then(response => {
-            result.message = "Get product by id."
+        Suppliers.find({_id: req.params.id}, { __v: false }).then(response => {
+            result.message = "Get supplier by id."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, product not found."
+            result.message = "Opps!, supplier not found."
             result.body = err
             res.json({result})
         })
     },
-    SaveProduct(req, res) {
+    SaveSupplier(req, res) {
         let result = new Result()
         console.log(req.body)
-        let newProduct = new Products(req.body)
-        newProduct.save().then(response => {
-            result.message = "Successfully added new product."
+        let newSupplier = new Suppliers(req.body)
+        newSupplier.save().then(response => {
+            result.message = "Successfully added new supplier."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful adding of product."
+            result.message = "Opps!, Unsuccessful adding of supplier."
             result.body = err
             res.json({result})
         })
     },
-    UpdateProduct(req, res) {
+    UpdateSupplier(req, res) {
         let result = new Result()
         let data = req.body
-        Products.findByIdAndUpdate(data.id, data).then(response => {
-            result.message = "Successfully updated product."
+        Suppliers.findByIdAndUpdate(data.id, data).then(response => {
+            result.message = "Successfully updated supplier."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful update of product."
+            result.message = "Opps!, Unsuccessful update of supplier."
             result.body = err
             res.json({result})
         })
     },
-    DeleteProduct(req, res) {
+    DeleteSupplier(req, res) {
         let result = new Result()
         let id = req.params.id
-        Products.findByIdAndRemove(id).then(response => {
-            result.message = "Product sucessfully deleted."
+        Suppliers.findByIdAndRemove(id).then(response => {
+            result.message = "Supplier sucessfully deleted."
             result.body = response
             res.json({result})
         }).catch(err => {
-            result.message = "Opps!, Unsuccessful deletion of product."
+            result.message = "Opps!, Unsuccessful deletion of supplier."
             result.body = err
             res.json({result})
         })

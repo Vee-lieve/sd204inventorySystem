@@ -28,10 +28,10 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Supplier ID</th>
-                        <th>Supplier Name</th>
-                        <th>Address</th>
-                        <th>Contact Number</th>
+                        <th id="supplier_id">Supplier ID</th>
+                        <th id="supplier_name">Supplier Name</th>
+                        <th id="supplier_add">Address</th>
+                        <th id="supplier_num">Contact Number</th>
                         <th>Actions</th>
                     
                        

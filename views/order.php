@@ -27,25 +27,20 @@
             <table class="table table-bordered text-center">
                 <thead>
                     <tr>
-                        <th>Order ID</th>
-                        <th>Customer Name</th>
-                        <th>Total Amount</th>
-                        <th>Payment Satus</th>
-                        <th>Order Status</th>
+                        <th id="order_id">Order ID</th>
+                        <th id="customer_name">Customer Name</th>
+                        <th id="total">Total Amount</th>
+                        <th id="payment_stat">Payment Satus</th>
+                        <th id="order_stat">Order Status</th>
                         <th>Actions</th>
-
-                       
-
                     </tr>
                 </thead>
                 <tbody>
-                   
                         <td>1</td>
                         <td>Jocelyn Amancio</td>
                         <td>500</td>
                         <td>Cash</td>
                         <td>Active</td>
-
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xf217;</i></a>
                             <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
@@ -60,15 +55,10 @@
         </div>
     </div>
 </div> 
-
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="../src/js/navbar.js"></script>
 <script src="../src/js/order.js"></script>
-
-
 </body>
 </html>

@@ -1,16 +1,24 @@
 var mongoose = require('mongoose');
 
-var ProductSch = new mongoose.Schema({
+var USERSSch = new mongoose.Schema({
     name: {
         type: String,
         required: false
     },
-    brand: {
+    username: {
         type: String,
         required: null
+    },
+    pass: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
     }
 });
 
-var Products = mongoose.model('Products', ProductSch);
+var Users = mongoose.model('Users', USERSSch);
 
-module.exports = Products;
+module.exports = Users;
