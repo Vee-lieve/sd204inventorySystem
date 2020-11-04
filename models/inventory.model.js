@@ -1,49 +1,112 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
-var INVENTORYSch = new mongoose.Schema({
-    inventory_id: {
-        type: Int32,
-        required: true
+var InventorySch = new mongoose.Schema({
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
     },
-    product_id: {
-        type: Int32,
-        required: true
+    stockId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Stock'
     },
-    stock_id: {
-        type: Int32,
-        required: null
-    },
-    product_name: {
+    productName: {
         type: String,
         required: true
-    }, 
-    desc: {
-        type: String,
+    },
+    description: {
+        type: Number,
         required: true
     },
     price: {
-        type: Int32,
+        type: Number,
         required: true
     },
     status: {
         type: String,
         required: true
-    }, 
-    date_created: {
+    },
+    createdAt: {
         type: Date,
+        default: Date.now
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    },
+    deletedAt: {
+        type: Date,
+        default: Date.now
+    },
+    
+
+
+});
+
+
+
+InventorySch.pre('save', function(next){
+    now = new Date();
+    this.updatedAt = now;
+    this.deletedAt = now;
+
+    if(!this.createdAt) {
+        this.createdAt = now
+    }
+    next();
+});
+
+
+var Inventory = mongoose.model('Inventory', InventorySch);
+
+module.exports = Inventory;
+var mongoose = require('mongoose');
+
+var StockSch = new mongoose.Schema({
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    },
+    supplierId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Supplier'
+    },
+    description: {
+        type: String,
         required: true
     },
-    date_updated: {
-        type: Date,
+    quantity: {
+        type: Number,
         required: true
     },
-    date_deleted: {
-        type: Date,
+    totalPrice: {
+        type: Number,
         required: true
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    deletedAt: {
+        type: Date,
+        default: Date.now
     }
 });
 
-var Inventory = mongoose.model('Inventory', INVENTORYSch);
+StockSch.pre('save', function(next){
+    now = new Date();
+    this.updatedAt = now;
+    this.deletedAt = now;
 
-module.exports = Inventory;
+    if(!this.createdAt) {
+        this.createdAt = now
+    }
+    next();
+});

@@ -1,33 +1,51 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
-var PRODUCTSSch = new mongoose.Schema({
-    product_id: {
-        type: Int32,
-        required: true
-    },
+var ProductSch = new mongoose.Schema({
     category: {
         type: String,
         required: true
     },
     brand: {
         type: String,
-        required: null
+        required: true
     },
-    product_name: {
+    productName: {
         type: String,
         required: true
-    }, 
+    },
     quantity: {
-        type: Int32,
+        type: Number,
         required: true
     },
     price: {
-        type: Int32,
+        type: Number,
         required: true
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    },
+    deletedAt: {
+        type: Date,
+        default: Date.now
     }
 });
 
-var Products = mongoose.model('Products', PRODUCTSSch);
+ProductSch.pre('save', function(next){
+    now = new Date();
+    this.updatedAt = now;
+    this.deletedAt = now;
 
-module.exports = Products;
+    if(!this.createdAt) {
+        this.createdAt = now
+    }
+    next();
+});
+
+var Product = mongoose.model('Product', ProductSch);
+
+module.exports = Product;

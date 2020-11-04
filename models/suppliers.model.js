@@ -1,25 +1,20 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
-var SUPPLIERSSch = new mongoose.Schema({
-    supplier_id: {
-        type: Int32,
-        required: true
-    },
-    supplier_name: {
+var SupplierSch = new mongoose.Schema({
+    supplierName: {
         type: String,
         required: true
     },
-    supplier_add: {
+    address: {
         type: String,
-        required: null
+        required: true
     },
-    supplier_num: {
-        type: Int32,
+    contactNum: {
+        type: String,
         required: true
     }
 });
 
-var Suppliers = mongoose.model('Suppliers', SUPPLIERSSch);
+var Supplier = mongoose.model('Supplier', SupplierSch);
 
-module.exports = Suppliers;
+module.exports = Supplier;

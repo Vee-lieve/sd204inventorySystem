@@ -1,25 +1,21 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
-var CUSTOMERSSch = new mongoose.Schema({
-    customer_id: {
-        type: Int32,
-        required: true
-    },
-    customer_name: {
+var CustomerSch = new mongoose.Schema({
+    customerName: {
         type: String,
         required: true
     },
-    customer_add: {
+    address: {
         type: String,
-        required: null
+        required: true
     },
-    customer_num: {
+    contactNum: {
         type: String,
         required: true
     }
+
 });
 
-var Customers = mongoose.model('Customers', CUSTOMERSSch);
+var Customer = mongoose.model('Customer', CustomerSch);
 
-module.exports = Customers;
+module.exports = Customer;

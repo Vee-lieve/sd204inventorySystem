@@ -30,6 +30,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(cors());
 
+app.use('/static',express.static(path.join(__dirname, "src")));
+
 const userRoute = require("./routes/users.router")
 app.use(userRoute)
 
@@ -39,12 +41,48 @@ app.use(userRoute)
 //         sms: "Hello from express."
 //     })
 // })
-app.get('/register', function (req, res) {
-    res.sendFile(path.join(__dirname+'/views/register.html'));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/register.html'));
   });
 
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname+'/views/index.html'));
+app.get('/home', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/index.html'));
+  });
+
+app.get('/inventory', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/inventory.html'));
+  });
+
+app.get('/stock', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/stock.html'));
+  });
+
+app.get('/customers', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/customers.html'));
+  });
+
+app.get('/orders', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/order.html'));
+  });
+
+app.get('/suppliers', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/supplier.html'));
+  });
+
+app.get('/products', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/product.html'));
+  });
+  
+app.get('/sales-report', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/report-sales.html'));
+  });
+
+app.get('/stock-report', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/report-stock.html'));
+  });
+
+app.get('/cashflow', function (req, res) {
+    res.sendFile(path.join(__dirname+'/public/cashflow.html'));
   });
 
 var port = process.env.PORT || 8084

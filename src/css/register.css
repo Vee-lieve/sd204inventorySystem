@@ -1,209 +1,184 @@
-body{
-  font:600 16px/18px 'Open Sans',sans-serif;
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
 }
 
-:root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: 0.75rem;
-  }
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+
+.but {
+  border-radius: 20px;
+  border: 1px solid #FFFFFF;
+  background-color: #33b5e5;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 14px 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   
-  .register,
-  .image {
-    min-height: 100vh;
-  }
-  
-  .bg-image {
-    background-image: url('../images/register-bg1.png');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  *,:after,:before{box-sizing:border-box}
-  .clearfix:after,.clearfix:before{content:'';display:table}
-  .clearfix:after{clear:both;display:block}
-  a{color:inherit;text-decoration:none}
-  
-  /*  Card for the form */
-  .login-wrap{
-    width:100%;
-    float: right;
-    max-width: 570px;
-    min-height:600px;
-    position:relative;
-    /* background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center; */
-    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-  }
-  
-  /* Card body */
-  .login-html{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    padding: 90px 70px 50px 70px;
-    /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+/* 
+.social-container {
+  margin: 5px ;
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+} */
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 50rem;
+  max-width: 100%;
+  min-height: 40rem;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+      opacity: 0;
+      z-index: 1;
   }
 
-  /* Form Animation */ 
-  .login-html .sign-in-htm,
-  .login-html .sign-up-htm{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    transition: all .4s linear;
+  50%,
+  100% {
+      opacity: 1;
+      z-index: 5;
   }
+}
+.overlay-container {
+  /* background: url('https://www.sitelucent.com/hs-fs/hubfs/Flat-Modern-design-of-wesite-template---Mobile-App-Development---Rianne-1.png?width=1500&height=1305&name=Flat-Modern-design-of-wesite-template---Mobile-App-Development---Rianne-1.png') no-repeat center; */
+  background: url('../images/register-bg1.png') no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
 
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
 
-  .login-html .sign-in,
-  .login-html .sign-up,
-  .login-form .group .check{
-    display: none;
-  }
+.overlay {
+   background: rgba(40, 57, 101, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
 
-  /* login & sign up text and button  */
-  .login-html .tab,
-  .login-form .group .button{
-    text-transform: uppercase;
-  }
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
 
-  /* login & sign up header */
-  .login-html .tab{
-    font-size: 22px;
-    margin-right: 15px;
-    padding-bottom: 5px;
-    margin: 0 15px 27px 0;
-    display: inline-block;
-    border-bottom: 2px solid transparent;
-  }
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
 
-  /* login & sign up text color & border */
-  .login-html .sign-in:checked + .tab,
-  .login-html .sign-up:checked + .tab{
-    color: #C0C0C0;
-    border-color:#1161ee;
-  }
+.overlay-left {
+  transform: translateX(-20%);
+}
 
-  /* Form input group */ 
-  .login-form{
-    min-height: 345px;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
 
-  /* Form input group spacing */
-  .login-form .group{
-    margin-bottom: 15px;
-  }
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
 
-  /* Form input group width and color*/
-  .login-form .group .input {
-    width: 100%;
-    color: #696969;
-    display: block;
-  }
-
-  /* Login & Sign up button*/
-  .login-form .group .button {
-    width: 100%;
-    color: #fff;
-    display: block;
-  }
-
-  .login-form .group .button,
-  .login-form .group .input{
-    border: none;
-    padding: 15px 20px;
-  }
-
-  .login-form .group .button {
-    border-radius: 2rem;
-    margin-top: 35px;
-    background: #1E90FF;
-  }
-
-  /* Form input group color and border radius */ 
-  .login-form .group .input {
-    /* border: none;
-    padding: 15px 20px; */
-    border-radius: 1rem;
-    background:rgba(220, 220, 220, 1);
-  }
-
-  .login-form .group input[data-type="password"]{
-    /* text-security:circle; */
-    -webkit-text-security: circle;
-  }
-
-  /* Keep me signed in checkbox */
-  .login-form .group label .icon{
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-    margin-top: 12px;
-    position: relative;
-    display: inline-block;
-    background: white;
-  }
-
-   /* Keep me signed in icon */
-  .login-form .group label .icon:before,
-  .login-form .group label .icon:after{
-    content: '';
-    width: 10px;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    transition: all .2s ease-in-out 0s;
-  }
-
-  /* Switching forms*/
-  .login-form .group label .icon:before{
-    left: 3px;
-    width: 5px;
-    bottom: 6px;
-    transform: scale(0) rotate(0);
-  }
-
-  .login-form .group label .icon:after{
-    top: 6px;
-    right: 0;
-    transform: scale(0) rotate(0);
-  }
-
-  .login-form .group .check:checked + label{
-    color: rgba(105, 105, 105, 1);
-  }
-
-  .login-form .group .check:checked + label .icon{
-    background:#1161ee;
-  }
-
-  .login-form .group .check:checked + label .icon:before{
-    transform:scale(1) rotate(45deg);
-  }
-
-  .login-form .group .check:checked + label .icon:after{
-    transform:scale(1) rotate(-45deg);
-  }
-
-  .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
-    transform:rotate(0);
-  }
-
-  .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
-    transform: rotate(0);
-  }
-  
-  .hr{
-    height:2px;
-    margin: 50px 0 50px 0;
-    background:rgba(169, 169, 169, 1);
-  }
-  .foot-lnk{
-    text-align: center;
-  }
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}

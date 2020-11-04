@@ -1,49 +1,56 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
-var STOCKSSch = new mongoose.Schema({
-    stock_id: {
-        type: Int32,
-        required: true
+var StockSch = new mongoose.Schema({
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
     },
-    product_id: {
-        type: Int32,
-        required: true
+    supplierId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Supplier'
     },
-    supplier_id: {
-        type: Int32,
-        required: true
-    },
-    stock_date: {
+    description: {
         type: String,
         required: true
-    },
-    desc: {
-        type: String,
-        required: null
     },
     quantity: {
-        type: Int32,
+        type: Number,
         required: true
     },
-    total: {
-        type: Int32,
+    totalPrice: {
+        type: Number,
         required: true
     },
-    date_created: {
+    createdAt: {
         type: Date,
-        required: null
+        default: Date.now
     },
-    date_updated: {
+    updatedAt: {
         type: Date,
-        required: null
+        default: Date.now
     },
-    date_deleted: {
+    createdAt: {
         type: Date,
-        required: null
+        default: Date.now
+    },
+    deletedAt: {
+        type: Date,
+        default: Date.now
     }
 });
 
-var Stocks = mongoose.model('Stocks', STOCKSSch);
+StockSch.pre('save', function(next){
+    now = new Date();
+    this.updatedAt = now;
+    this.deletedAt = now;
 
-module.exports = Stocks;
+    if(!this.createdAt) {
+        this.createdAt = now
+    }
+    next();
+});
+
+
+var Stock = mongoose.model('Stock', StockSch);
+
+module.exports = Stock;
