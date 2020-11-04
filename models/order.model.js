@@ -1,30 +1,28 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
-const { stringify } = require('querystring');
 
-var ORDERSSch = new mongoose.Schema({
-    order_id: {
-        type: Int32,
+var OrdersSch = new mongoose.Schema({
+    orderId: {
+        type: Number,
         required: true
     },
-    customer_name: {
+    customerName: {
         type: String,
         required: true
     },
     total: {
-        type: Int32,
+        type: Number,
         required: null
     },
-    payment_stat: {
+    paymentStat: {
         type: String,
         required: true
     }, 
-    order_stat: {
+    orderStat: {
         type: String,
         required: true
     }
 });
 
-var Orders = mongoose.model('Orders', ORDERSSch);
+var Orders = mongoose.model('Orders', OrdersSch);
 
 module.exports = Orders;

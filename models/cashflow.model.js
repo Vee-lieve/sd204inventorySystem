@@ -1,9 +1,8 @@
-const { Int32 } = require('bson');
 var mongoose = require('mongoose');
 
 var CASHFLOWSch = new mongoose.Schema({
     cashflow_id: {
-        type: Int32,
+        type: Number,
         required: true
     },
     category: {
@@ -19,11 +18,11 @@ var CASHFLOWSch = new mongoose.Schema({
         required: true
     }, 
     quantity: {
-        type: Int32,
+        type: Number,
         required: true
     },
     price: {
-        type: Int32,
+        type: Number,
         required: true
     }
 });

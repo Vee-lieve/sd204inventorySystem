@@ -53,7 +53,7 @@ app.get('/inventory', function (req, res) {
     res.sendFile(path.join(__dirname+'/public/inventory.html'));
   });
 
-app.get('/stock', function (req, res) {
+app.get('/stocks', function (req, res) {
     res.sendFile(path.join(__dirname+'/public/stock.html'));
   });
 

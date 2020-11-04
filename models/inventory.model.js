@@ -36,13 +36,8 @@ var InventorySch = new mongoose.Schema({
     deletedAt: {
         type: Date,
         default: Date.now
-    },
-    
-
-
+    }
 });
-
-
 
 InventorySch.pre('save', function(next){
     now = new Date();
@@ -54,7 +49,6 @@ InventorySch.pre('save', function(next){
     }
     next();
 });
-
 
 var Inventory = mongoose.model('Inventory', InventorySch);
 
