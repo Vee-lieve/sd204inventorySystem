@@ -37,7 +37,10 @@ var InventorySch = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-});
+},{
+    collection: 'inventories'
+}
+);
 
 InventorySch.pre('save', function(next){
     now = new Date();

@@ -25,11 +25,23 @@ $(document).ready(function(){
 				$(this).addClass("error");
 				empty = true;
 			} else{
+				
                 $(this).removeClass("error");
             }
 		});
 		$(this).parents("tr").find(".error").first().focus();
 		if(!empty){
+			$.post('/suppliers',{
+				supplierName : input[1].value,
+				address : input[2].value,
+				contactNum : input[3].value,
+			}).then((res)=>{
+				alert('sucess')
+			}).catch((err)=>{
+				console.log(err)
+			})
+
+			console.log(input[0].value)
 			input.each(function(){
 				$(this).parent("td").html($(this).val());
 			});			

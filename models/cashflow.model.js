@@ -25,7 +25,10 @@ var CASHFLOWSch = new mongoose.Schema({
         type: Number,
         required: true
     }
-});
+},{
+    collection: 'cashflow'
+}
+);
 
 var Cashflow = mongoose.model('Cashflow', CASHFLOWSch);
 

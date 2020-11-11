@@ -37,7 +37,10 @@ var StockSch = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-});
+},{
+    collection: 'stocks'
+}
+);
 
 StockSch.pre('save', function(next){
     now = new Date();
@@ -50,7 +53,4 @@ StockSch.pre('save', function(next){
     next();
 });
 
-
-var Stock = mongoose.model('Stock', StockSch);
-
-module.exports = Stock;
+module.exports = mongoose.model('Stock', StockSch);

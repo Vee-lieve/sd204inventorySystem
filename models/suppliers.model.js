@@ -1,6 +1,7 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
+const { collection } = require('./result');
 
-var SupplierSch = new mongoose.Schema({
+const SupplierSch = new mongoose.Schema({
     supplierName: {
         type: String,
         required: true
@@ -10,11 +11,12 @@ var SupplierSch = new mongoose.Schema({
         required: true
     },
     contactNum: {
-        type: String,
+        type: Number,
         required: true
     }
-});
-
-var Supplier = mongoose.model('Supplier', SupplierSch);
-
-module.exports = Supplier;
+},{
+    collection: 'suppliers'
+}
+);
+    
+module.exports = mongoose.model('Supplier', SupplierSch);

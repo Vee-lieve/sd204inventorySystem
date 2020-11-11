@@ -1,10 +1,10 @@
-const Suppliers = require("../models/suppliers.model")
+const Supplier = require("../models/suppliers.model")
 const Result = require("../models/result")
 
 module.exports = {
     GetSupplier(req, res) {
         let result = new Result()
-        Suppliers.find({}, { __v: false }).then(response => {
+        Supplier.find().then(response => {
             result.message = "List of all suppliers."
             result.body = response
             res.json({result})
@@ -13,10 +13,22 @@ module.exports = {
             result.body = err
             res.json({result})
         })
+
+        //   try{
+        //     Supplier.find({},(err,data)=>{
+        //         if(err){
+        //             return err;
+        //         }
+            
+               
+        //     })
+        // }catch(err){
+        //     console.log(err)
+        // }
     },
     GetSupplierById(req, res) {
         let result = new Result()
-        Suppliers.find({_id: req.params.id}, { __v: false }).then(response => {
+        Supplier.find({_id: req.params.id}, { __v: false }).then(response => {
             result.message = "Get supplier by id."
             result.body = response
             res.json({result})
@@ -29,21 +41,28 @@ module.exports = {
     SaveSupplier(req, res) {
         let result = new Result()
         console.log(req.body)
-        let newSupplier = new Suppliers(req.body)
-        newSupplier.save().then(response => {
-            result.message = "Successfully added new supplier."
-            result.body = response
-            res.json({result})
-        }).catch(err => {
-            result.message = "Opps!, Unsuccessful adding of supplier."
-            result.body = err
-            res.json({result})
+        let newSupplier = new Supplier(req.body)
+        
+        newSupplier.save((err,data)=>{
+            if(err){
+                return err;
+            }
+            res.redirect('/suppliers')
         })
+        // newSupplier.save().then(response => {
+        //     result.message = "Successfully added new supplier."
+        //     result.body = response
+        //     res.json({result})
+        // }).catch(err => {
+        //     result.message = "Opps!, Unsuccessful adding of supplier."
+        //     result.body = err
+        //     res.json({result})
+        // })
     },
     UpdateSupplier(req, res) {
         let result = new Result()
         let data = req.body
-        Suppliers.findByIdAndUpdate(data.id, data).then(response => {
+        Supplier.findByIdAndUpdate(data.id, data).then(response => {
             result.message = "Successfully updated supplier."
             result.body = response
             res.json({result})
@@ -56,7 +75,7 @@ module.exports = {
     DeleteSupplier(req, res) {
         let result = new Result()
         let id = req.params.id
-        Suppliers.findByIdAndRemove(id).then(response => {
+        Supplier.findByIdAndRemove(id).then(response => {
             result.message = "Supplier sucessfully deleted."
             result.body = response
             res.json({result})

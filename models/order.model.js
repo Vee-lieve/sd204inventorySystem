@@ -21,7 +21,10 @@ var OrdersSch = new mongoose.Schema({
         type: String,
         required: true
     }
-});
+},{
+    collection: 'orders'
+}
+);
 
 var Orders = mongoose.model('Orders', OrdersSch);
 

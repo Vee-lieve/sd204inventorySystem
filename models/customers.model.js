@@ -13,8 +13,10 @@ var CustomerSch = new mongoose.Schema({
         type: String,
         required: true
     }
-
-});
+},{
+    collection: 'customers'
+}
+);
 
 var Customer = mongoose.model('Customer', CustomerSch);
 

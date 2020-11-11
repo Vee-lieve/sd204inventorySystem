@@ -33,7 +33,10 @@ var ProductSch = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-});
+},{
+    collection: 'products'
+}
+);
 
 ProductSch.pre('save', function(next){
     now = new Date();

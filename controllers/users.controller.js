@@ -1,10 +1,10 @@
-const Users = require("../models/users.model")
+const User = require("../models/users.model")
 const Result = require("../models/result")
 
 module.exports = {
     GetUser(req, res) {
         let result = new Result()
-        Users.find({}, { __v: false }).then(response => {
+        User.find().then(response => {
             result.message = "List of all users."
             result.body = response
             res.json({result})
@@ -13,10 +13,24 @@ module.exports = {
             result.body = err
             res.json({result})
         })
+        // try{
+        //     User.find({},(err,data)=>{
+        //         if(err){
+        //             return err;
+        //         }
+        //         data = [
+        //             {"name":"test"}
+        //         ]
+        //         res.json({users:data})
+        //     })
+        // }catch(err){
+        //     console.log(err)
+        // }
+        
     },
     GetUserById(req, res) {
         let result = new Result()
-        Users.find({_id: req.params.id}, { __v: false }).then(response => {
+        User.find({_id: req.params.id}, { __v: false }).then(response => {
             result.message = "Get user by id."
             result.body = response
             res.json({result})
@@ -29,7 +43,7 @@ module.exports = {
     SaveUser(req, res) {
         let result = new Result()
         console.log(req.body)
-        let newUser = new Users(req.body)
+        let newUser = new User(req.body)
         newUser.save().then(response => {
             result.message = "Successfully added new user."
             result.body = response
@@ -43,7 +57,7 @@ module.exports = {
     UpdateUser(req, res) {
         let result = new Result()
         let data = req.body
-        Users.findByIdAndUpdate(data.id, data).then(response => {
+        User.findByIdAndUpdate(data.id, data).then(response => {
             result.message = "Successfully updated user."
             result.body = response
             res.json({result})
@@ -56,7 +70,7 @@ module.exports = {
     DeleteUser(req, res) {
         let result = new Result()
         let id = req.params.id
-        Users.findByIdAndRemove(id).then(response => {
+        User.findByIdAndRemove(id).then(response => {
             result.message = "User sucessfully deleted."
             result.body = response
             res.json({result})
