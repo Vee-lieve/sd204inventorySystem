@@ -7,8 +7,8 @@ const USERS = require("../controllers/users.controller")
 
 router.get("/users", /*auth.authorized,*/ USERS.GetUser)
 router.get("/users/:id", /* auth.authorized, */ USERS.GetUserById)
-router.post("/users", /* auth.authorized, */ USERS.SaveUser)
+router.post("/register", USERS.SaveUser)
 router.put("/users", /* auth.authorized, */ USERS.UpdateUser)
 router.delete("/users/:id", /* auth.authorized, */ USERS.DeleteUser)
 
-module.exports = router;
+module.exports = router;    

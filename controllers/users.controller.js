@@ -47,11 +47,13 @@ module.exports = {
         newUser.save().then(response => {
             result.message = "Successfully added new user."
             result.body = response
-            res.json({result})
+            // res.json({result})
+            return res.redirect("/home")
         }).catch(err => {
             result.message = "Opps!, Unsuccessful adding of user."
             result.body = err
             res.json({result})
+            return res.redirect("/home?error=true")
         })
     },
     UpdateUser(req, res) {
